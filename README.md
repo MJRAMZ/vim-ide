@@ -8,3 +8,4 @@ Settings and plugins to make vim act like an IDE
 * [ale](https://github.com/dense-analysis/ale)
 * [emmet-vim](https://github.com/mattn/emmet-vim)
 * [vim-surround](https://github.com/tpope/vim-surround)
+* [vim-getgutter](https://github.com/airblade/vim-gitgutter)
