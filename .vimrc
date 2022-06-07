@@ -41,7 +41,8 @@ colorscheme monokai
 
 "------- Airline Plugin Settings --------
 set laststatus=2
-let g:airline_theme=''
+let g:airline_theme='solarized-dark'
+let
 let g:airline#extensions#tabline#enabled=1
 let g:airline_detect_past=1
 
