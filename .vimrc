@@ -2,7 +2,14 @@
 set rtp+=~/.vim/bundle/Vundle.vim
 call vundle#begin()
 Plugin 'VundleVim/Vundle.vim'
+
+"---------- Visual styling ----------
+Plugin 'vim-airline/vim-airline'
+Plugin 'vim-airline/vim-airline-themes'
 call vundle#end()
+
+
+
 
 "---------- General settings ----------
 set backspace=indent,eol,start
