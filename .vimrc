@@ -1,3 +1,9 @@
+"------ Vundle Plugin settings -----
+set rtp+=~/.vim/bundle/Vundle.vim
+call vundle#begin()
+Plugin 'VundleVim/Vundle.vim'
+call vundle#end()
+
 "---------- General settings ----------
 set backspace=indent,eol,start
 set mouse=a
