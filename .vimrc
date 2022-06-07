@@ -10,10 +10,13 @@ Plugin 'vim-airline/vim-airline'
 Plugin 'vim-airline/vim-airline-themes'
 Plugin 'airblade/vim-gitgutter'
 
+"----------- WebDev Plugins ---------
+Plugin 'mattn/emmet-vim'
+Plugin 'tpope/vim-surround'
+
+"---------- Syntax -----------
+Plugin 'dense-analysis/ale'
 call vundle#end()
-
-
-
 
 "---------- General settings ----------
 filetype plugin indent on
@@ -45,3 +48,15 @@ let g:airline_detect_past=1
 " ----- airblade/vim-gitgutter settings -----
 " In vim-airline, only display "hunks" if the diff is non-zero
 let g:airline#extensions#hunks#non_zero_only=1
+
+"----- Emmet-Vim Settings -------
+let g:user_emmet_leader_key=','
+
+"-------- ALE Setttings -------
+let g:ale_echo_msg_error_str = 'E'
+let g:ale_echo_msg_warning_str = 'W'
+let g:ale_echo_msg_format = '[%linter%] %s [%severity%]'
+" Fix files with prettier, and then ESLint.
+let b:ale_fixers = ['prettier', 'eslint']
+" Check Python files with flake8 and pylint.
+let b:ale_linters = ['flake8', 'pylint']
